@@ -45,7 +45,7 @@
 				return;
 			}
 		}
-		function tmpConv(t,u){
+		function tmp(t,u){
 			var t1;
 			var u1;
 			if(u == "F"){
@@ -67,10 +67,11 @@
 			   var chk = validate(t);
 				if(chk != null) return chk ;
 				
-			   	var tmpConved = tmpConv(t,u);
+			   	var tmped = tmp(t,u);
 			  
 			   
-			   alert("Temperature is "+ tmpConved.t1+" in "+ tmpConved.u1);
+			   //alert("Temperature is "+ tmp.t1+" in "+ tmp.u1);
+			   $('#result').text("Temperature is " +tmped.t1+ " in " + tmped.u1 );
 			});
 		});
 	</script>
